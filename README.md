@@ -6,7 +6,7 @@ Docker를 이용한 Self-hosting으로 Supabase를 세팅해보자!
 
 - 네이티브 환경에서 개발할 때보다 변화하는 설정들을 쉽게 관리할 수 있고, 여러 명의 개발 환경을 일치시키기 쉽다.
 
-## Local 세팅
+## ✅ Local 세팅
 
 ### docker desktop 설치/실행 확인
 
@@ -39,13 +39,19 @@ docker compose pull
 docker compose up -d --build
 ```
 
-### 세팅 완료 화면
+## ✅ 완료 화면
 
 docker desktop에서 `docker-compose.yml`에 설정한 이미지들이 다 올라가 있는지 확인할 수 있다. CLI로는 `docker ps` 명령어로 확인할 수 있다. 
 
-`localhost:8000`으로 접근하고 `DASHBOARD_USERNAME`, `DASHBOARD_PASSWORD`를 입력했을 때, 아래와 같은 화면을 만난다면 세팅에 성공한 것이다.
+<img width="1160" alt="image" src="https://github.com/RumosZin/supabase-self-hosting-docker/assets/81238093/66ed1930-702f-4a4e-b1b0-1796dddbfdc1">
 
-## Error 발생 시
+
+`localhost:8000`으로 접근하고 `DASHBOARD_USERNAME`, `DASHBOARD_PASSWORD`를 입력했을 때, 아래와 같은 화면을 만난다면 supabase 설정을 완료한 것이다.
+
+![image](https://github.com/RumosZin/supabase-self-hosting-docker/assets/81238093/23f754b6-e3a0-422f-bf50-b8e71b0fc954)
+
+
+## ✅ Error 발생 시
 
 `no configuration file provided: not found` : `docker-compose.yml`이 있는 위치에서 실행하는 중인지 경로를 확인한다.
 
